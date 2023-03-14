@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Бердюгин Арсений</title>
+	<link rel="stylesheet" href="./style.css">
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+	<header class="header">
+		<ul class="menu">
+			<li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
+			<li class="menu__item"><a class="menu__link" href="#about">Обо мне</a></li>
+			<li class="menu__item"><a class="menu__link" href="#services">Навыки</a></li>
+			<li class="menu__item"><a class="menu__link" href="#contact">Контакты</a></li>
+		</ul>
+	</header>
+	<main class="main">
+		<div class="content">
+			<section class="about" id="about">
+				<h1 class="about__title">Обо мне</h1>
+				<p class="about__text">
+					Я студент Ирбитского Мотоциклетного Техникума.<br>Изучаю C++ и библиотеки к нему SFML, OpenGL.
+					Делаю простой frontend сайтов на HTML/CSS/JS и ReactJS, простой backend на PHP с применением паттерна MVC
+				</p>
+			</section>
+			<section class="services" id="services">
+				<h1 class="services__title">Навыки</h1>
+				<ul class="list">
+					<li class="list__item">Разработка сайтов</li>
+					<li class="list__item">Дизайн сайтов</li>
+					<li class="list__item">Написание низкоуровневых приложений для linux</li>
+				</ul>
+			</section>
+		</div>
+		<section class="contact" id="contact">
+			<h1 class="contact__title">Контакты</h1>
+			<form class="form">
+				<input class="form__input" type="text" id="name" name="name" placeholder="Имя" required>
+				<input class="form__input" type="email" id="email" name="email" placeholder="Email" required>
+				<textarea class="form__textarea" id="message" name="message" placeholder="Сообщение" required></textarea>
+				<button class="form__button" type="submit">Отправить</button>
+			</form>
+		</section>
+	</main>
+	<footer class="footer">
+		<p>Арсен Букин все права защищены</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
